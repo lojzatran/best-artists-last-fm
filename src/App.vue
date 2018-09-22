@@ -1,29 +1,31 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+    <b-container id="app">
+        <b-nav id="nav">
+            <router-link to="/" exact tag="li" class="nav-item" active-class="active"><a class="nav-link">{{ $t("nav.home") }}</a></router-link>
+            <router-link to="/calendar" tag="li" class="nav-item" active-class="active"><a class="nav-link">{{ $t("nav.calendar") }}</a></router-link>
+            <router-link to="/about" tag="li" class="nav-item" active-class="active"><a class="nav-link">{{ $t("nav.about") }}</a></router-link>
+            <b-nav-item>
+                <TheL10nChanger/>
+            </b-nav-item>
+        </b-nav>
+        <router-view/>
+    </b-container>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+    import TheL10nChanger from './components/TheL10nChanger'
+
+    export default {
+        name: 'home',
+        components: {
+            TheL10nChanger
+        }
     }
-  }
-}
+
+</script>
+
+<style lang="scss">
+    li.active a {
+        color: red;
+    }
 </style>
