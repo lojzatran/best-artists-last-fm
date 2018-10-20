@@ -35,9 +35,8 @@
             async getTopArtistsForCountry(countryName) {
                 this.loadingArtist = true
                 const response = await
-                    axios.get(`http://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=${countryName}&api_key=${API_KEY}&format=json`)
+                    axios.get(`//ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=${countryName}&api_key=${API_KEY}&format=json`)
                 this.artists = response.data.topartists.artist
-                console.log('xxx artists ' + JSON.stringify(this.artists))
                 this.loadingArtist = false
             }
         }
