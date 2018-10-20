@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["about"],{f820:function(t,e,n){"use strict";n.r(e);var u=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("h1",[t._v(t._s(t.$t("about.title")))])},o=[],l=n("2877"),s={},a=Object(l["a"])(s,u,o,!1,null,null,null);a.options.__file="About.vue";e["default"]=a.exports}}]);
+//# sourceMappingURL=about.0a3aab28.js.map
