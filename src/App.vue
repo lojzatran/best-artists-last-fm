@@ -2,7 +2,7 @@
     <b-container id="app">
         <b-nav id="nav">
             <router-link to="/" exact tag="li" class="nav-item" active-class="active"><a class="nav-link">{{ $t("nav.home") }}</a></router-link>
-            <router-link to="/calendar" tag="li" class="nav-item" active-class="active"><a class="nav-link">{{ $t("nav.calendar") }}</a></router-link>
+            <router-link to="/top-artists" tag="li" class="nav-item" active-class="active"><a class="nav-link">{{ $t("nav.topartists") }}</a></router-link>
             <router-link to="/about" tag="li" class="nav-item" active-class="active"><a class="nav-link">{{ $t("nav.about") }}</a></router-link>
             <b-nav-item>
                 <TheL10nChanger/>

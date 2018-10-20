@@ -14,9 +14,9 @@ export default new Router({
             component: Home
         },
         {
-            path:'/calendar',
-            name: 'calendar',
-            component: () => import('./views/Calendar.vue')
+            path:'/top-artists',
+            name: 'top-artists',
+            component: () => import('./views/TopArtists.vue')
         },
         {
             path: '/about',

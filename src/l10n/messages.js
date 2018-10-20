@@ -2,11 +2,14 @@ export default {
     en: {
         nav: {
             home: 'Home',
-            calendar: 'Calendar',
+            topartists: 'Top Artists',
             about: 'About'
         },
-        home:{
+        home: {
             title: 'Home page'
+        },
+        topartists: {
+            searchBtnText: 'Show chart'
         },
         about: {
             title: 'About page'
@@ -15,11 +18,14 @@ export default {
     cs: {
         nav: {
             home: 'Domů',
-            calendar: 'Kalendář',
+            topartists: 'Nejlepší umělci',
             about: 'O aplikaci'
         },
-        home:{
+        home: {
             title: 'Hlavní stránka'
+        },
+        topartists: {
+            searchBtnText: 'Zobrazit žebříček'
         },
         about: {
             title: 'Stránka o aplikaci'
